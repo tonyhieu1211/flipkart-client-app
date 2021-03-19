@@ -22,7 +22,7 @@ const OrderPage = (props) => {
 
     useEffect(() => {
         dispatch(getOrders());
-    }, []);
+    }, [user.orders]);
 
     console.log(user);
 

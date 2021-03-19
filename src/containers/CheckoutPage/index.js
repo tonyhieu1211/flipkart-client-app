@@ -173,6 +173,7 @@ const CheckoutPage = (props) => {
         }
         dispatch(addOrder(payload));
         setConfirmOrder(true);
+        props.history.push('/account/orders');
     }
     return (
         <Layout>
