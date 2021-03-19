@@ -9,7 +9,6 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import "./style.css";
 import { Breed } from "../../components/MaterialUI";
-import { generatePicture } from "../../urlConfig";
 
 /**
  * @author
@@ -47,7 +46,7 @@ const OrderPage = (props) => {
                                 <div className="orderImgContainer">
                                     <img
                                         className="orderImg"
-                                        src={generatePicture(item.productId.productPics[0].img)}
+                                        src={item.productId.productPics[0].img}
                                     />
                                 </div>
                                 <div className="orderRow">

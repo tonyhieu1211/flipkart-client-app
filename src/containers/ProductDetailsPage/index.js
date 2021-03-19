@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, getProductById } from '../../actions';
 import Layout from '../../components/Layout';
-import {generatePicture} from '../../urlConfig';
 import {MaterialButton} from '../../components/MaterialUI';
 import { 
     IoIosArrowForward, 
@@ -35,7 +34,7 @@ const ProductDetailsPage = (props) => {
                         {
                             productState.productDetails.productPics.map((thumb, index) =>
                                 <div className="thumbnail">
-                                    <img src={generatePicture(thumb.img)} alt={thumb.img} />
+                                    <img src={thumb.img} alt={thumb.img} />
                                 </div>
                             )
                         }
@@ -48,7 +47,7 @@ const ProductDetailsPage = (props) => {
                     </div>
                     <div className="productDescContainer">
                         <div className="productDescImgContainer">
-                            <img src={generatePicture(productState.productDetails.productPics[0].img)} alt={`${productState.productDetails.productPics[0].img}`} />
+                            <img src={productState.productDetails.productPics[0].img} alt={`${productState.productDetails.productPics[0].img}`} />
                         </div>
 
                         {/* action buttons */}

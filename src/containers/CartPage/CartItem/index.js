@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { removeCartItem } from '../../../actions/cart.action';
-import { generatePicture } from '../../../urlConfig';
+
 import './style.css';
 
 const CartItem = (props) => {
@@ -38,7 +38,7 @@ const CartItem = (props) => {
             
             <div  className="flexRow">
                 <div className="cartProImgContainer">
-                    <img src={img ? generatePicture(img) : "" } alt={''}/>
+                    <img src={img} />
                 </div>
                 <div className="cartItemDetails">
                     <div>
