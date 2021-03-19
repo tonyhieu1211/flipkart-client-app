@@ -35,7 +35,7 @@ const ProductPage = (props) => {
                         </a>)
                 }   
             </Carousel>
-            <div style={{ 
+            {/* <div style={{ 
                 display:'flex',
                 justifyContent:'center',
                 flexWrap:'wrap',
@@ -53,7 +53,7 @@ const ProductPage = (props) => {
                         
                     )
                 }
-            </div>
+            </div> */}
         </div>
     )
 }
